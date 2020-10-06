@@ -1,0 +1,42 @@
+<div class="intro">
+	<div class="text">
+		<h1>ваше мнение о нас</h1>
+		<h2>отзывы и рекомендации</h2>
+		<p>«Немецкий Сервис» — лучший сервис по ремонту бытовой техники. Нас боятся конкуренты и уважают партнеры. Нас рекомендуют друзьям и хорошим знакомым. Мы дружим с каждым клиентом и всегда готовы прийти на помощь.</p>
+	</div>
+</div>
+<div class="review-container">
+
+</div>
+
+<div class="review__add__btn__container">
+	<button class="review__add__btn">Оставить отзыв</button>
+</div>
+
+<div class="review__form__container">
+	<div class="review__form__content">
+		<div class="review__form__close__btn">&#10006;</div>
+		<form action="/postreview" method="post" class="review__form" id="review__form">
+			<input type="hidden" name="id" value="0" />
+			<input type="text" name="username" placeholder="Ваше имя" class="input__username">
+			<textarea placeholder="Ваш отзыв" name="review" class="textaria__review" ></textarea>
+			<select name="rating" class="input__rating">
+			    <option value="0" disabled selected>Ваша оценка</option>
+			    <option value="1">1 звезда</option>
+			    <option value="2">2 звезды</option>
+			    <option value="3">3 звезды</option>
+			    <option value="4">4 звезды</option>
+			    <option value="5">5 звезд</option>
+		   </select>
+			<input type="submit" value="Отправить" class="submit__review">
+		</form>
+	</div>
+</div>
+
+
+<div class="review__thank-you__container">
+	<div class="review__thank-you__content">
+		<div class="review__thank-you__close__btn">&#10006;</div>
+		<div class="review__thank-you__text">Спасибо за ваш комментарий!</div>
+	</div>
+</div>

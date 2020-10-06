@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ title }}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script
+			  src="http://code.jquery.com/jquery-3.5.0.js"
+			  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+			  crossorigin="anonymous">
+	</script>
+	<script src="/scripts/questions.js"></script>
+	<script src="/scripts/repair.js"></script>
+	<script src="/scripts/review.js"></script>
+	<script src="/scripts/prices.js"></script>
+	<script src="/scripts/mailer.js"></script>
+</head>
+<body>
+	{{> header}}
+	
+	<main>
+		<div class="main__content">
+			{{{body}}}
+			{{> questions}}
+		</div>
+		{{> sidebar}}
+	</main>
+	
+	{{> footer}}
+
+</body>
+
+
+
+
+</html>

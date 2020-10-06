@@ -1,0 +1,55 @@
+<div class="intro">
+	<div class="text">
+		<h1>цены на услуги</h1>
+		<h2>самое выгодное предложение</h2>
+		<p>Мы дорожим нашей репутаций, поэтому не скрываем полный прайс-лист на наши услуги. Обратите внимание: у нас нет скрытых позиций.</p>
+	</div>
+</div>
+
+
+<div class="category__form__container">
+	<div class="category__form__content">
+		<div class="category__form__close__btn">&#10006;</div>
+		<form method="post" class="category__form" id="category__form">
+			<h2>Категория</h2>
+			<input type="text" name="id" value="0" hidden>
+			<input type="text" name="title" placeholder="Название категории">
+			<div class="category__options">
+				<input type="submit" name="add" value="добавить">
+				<input type="submit" name="edit" value="изменить">
+				<input type="submit" name="delete" value="удалить">
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+<div class="price__form__container">
+	<div class="price__form__content">
+		<div class="price__form__close__btn">&#10006;</div>
+		<form method="post" class="price__form" id="price__form">
+			<h2>Услуга</h2>
+			<input type="text" name="id" value="0" hidden>
+			<input type="text" name="title" placeholder="Услуга">
+			<input type="text" name="price" placeholder="Цена">
+			<input type="text" name="category" value="0" hidden>
+
+			<div class="price__options">
+				<input type="submit" name="add" value="добавить">
+				<input type="submit" name="edit" value="изменить">
+				<input type="submit" name="delete" value="удалить">
+			</div>
+		</form>
+	</div>
+</div>
+
+
+<div class="prices__container"></div>
+
+
+<div class="prices__dev">
+	<button class="add__category__btn">Добавить категорию</button>
+</div>
+
+

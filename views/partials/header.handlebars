@@ -1,0 +1,97 @@
+<header class="header">
+	<div class="header__top">
+		<div class="header__logo">
+			<a href="/"><img src="/img/header/header-logo.png"></a>
+		</div>
+		<div class="header__about">
+			<nav class="header__nav">
+				<a href="/about">О компании</a>
+				<a href="/contacts">Контакты</a>
+				<a href="/review">Отзывы</a>
+				<a href="/prices">Цены</a>
+			</nav>
+			<div class="header__phone">
+				<div class="header__description">ремонт бытовой техники</div>
+				<div class="header__phone_number">(831) 228-94-36</div>
+			</div>
+		</div>
+		<button class="burger-btn">&#9776;</button>
+	</div>
+
+	<div class="header__about__adaptive">
+		<nav class="header__nav__adaptive">
+			<a href="/about">О компании</a>
+			<a href="/contacts">Контакты</a>
+			<a href="/review">Отзывы</a>
+			<a href="/prices">Цены</a>
+		</nav>
+	</div>
+
+	<div class="header__phone__adaptive">
+		<a href="tel:+8312289436" class="header__phone_number__adaptive">(831) 228-94-36</a>
+	</div>
+
+	<div class="header__categories">
+		<a href="/repair/fridge">холодильник</a>
+		<a href="/repair/washing">стиральная машина</a>
+		<a href="/repair/dishwasher">посудомоечная машина</a>
+		<a href="/repair/electric_stove">электроплита</a>
+		<a href="/repair/hob">варочная панель</a>
+		<a href="/repair/oven">духовой шкаф</a>
+	</div>
+
+	<div class="header__banner">
+		
+		<div class="h24">
+			<a href="">
+				<img src="/img/header/banner/24h.png">
+				<div class="banner-text">без выходных<br><span class="banner-text-thin">с 8:00 до 24:00</span></div>
+			</a>	
+		</div>
+
+		<div class="truck">
+			<a href="">
+				<img src="/img/header/banner/truck.png">
+				<div class="banner-text">бесплатный<br><span class="banner-text-thin">выезд за 30 минут</span></div>
+			</a>	
+		</div>
+
+		<div class="diag">
+			<a href="">
+				<img src="/img/header/banner/diag.png">
+				<div class="banner-text">бесплатная<br><span class="banner-text-thin">диагностика</span></div>
+			</a>	
+		</div>
+
+		<div class="warranty">
+			<a href="">
+				<img src="/img/header/banner/warranty.png">
+				<div class="banner-text">гарантия до 3 лет<br><span class="banner-text-thin">на наши услуги</span></div>
+			</a>	
+		</div>
+
+	</div>
+</header>
+
+<div class="menu">
+	<button class="close-btn">&#10006;</button>
+	<nav class="menu__nav">
+		<a href="/repair/fridge">холодильник</a>
+		<a href="/repair/washing">стиральная машина</a>
+		<a href="/repair/dishwasher">посудомоечная машина</a>
+		<a href="/repair/electric_stove">электроплита</a>
+		<a href="/repair/hob">варочная панель</a>
+		<a href="/repair/oven">духовой шкаф</a>
+	</nav>
+</div>
+
+<script>
+	$('.burger-btn').on('click', function () {
+		$('.menu').css("top", "0");
+		$('.menu').css("opacity", "1");
+	})
+	$('.close-btn').on('click', function(){
+		$('.menu').css("top", "-100%");
+		$('.menu').css("opacity", "0");
+	})
+</script>
